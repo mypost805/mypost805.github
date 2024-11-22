@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mypost.com</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.12/css/boxicons.min.css'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main Content Area -->
+    <main>
+        <!-- Footer with Social media Icons -->
+        <div class="footer">
+            <ul class="sci">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <img src="image/facebook logo.webp" width="20px" height="auto" alt="facebook"></a></li>
+                <li><a href="https://twitter.com/yourprofile" target="_blank" alt="twitter"><img src="image/X-Logo.png" width="20px" height="auto"></a></li>
+            </ul>
+            <div class="date" id="currentDate"></div> <!-- Placeholder for today's date -->
+        </div>
+        <br><br>
+        <!-- Logo of the website -->
+        <a href="#"><img src="image/203524667.png" width="300" class="logo"></a>
+        <br><br>
+        <!-- Navigation Bar -->
+        <header>
+            <div class="toggle"></div>
+            <ul class="Navigation">
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="news.html">News</a></li> 
+                    <li><a href="politics.html">Politics</a></li> 
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="showbiz.html">Showbiz</a></li>
+                    <li><a href="international.html">International</a></li>
+                </ul>
+        </header>
+        <!--The main home page-->
+        <div class="content">
+            <h2><b>Vacant seats: Political poison in the judicial system at its peak – Justice Atuguba</b></h2>
+            <img src="image/bagbin and atuguba.jpeg" alt="speaker Bagbin and retired judge" width="400px" height="auto"><br><br>
+            <p>Retired Supreme Court Justice William Atuguba has raised concerns regarding the composition of the Supreme Court panel that ruled in favour of Majority Leader Alexander Afenyo-Markin’s suit challenging Speaker Alban Bagbin’s decision to declare four parliamentary seats vacant.<br><br>
+                In an interview on Saturday, November 16, Justice Atuguba described the majority decision as “predictable,” given the makeup of the panel.<br><br>
+                He suggested that the ruling was not surprising, indicating that the judicial outcome could be attributed to the composition of the judges involved in the case.<br>
+                Justice Atuguba also expressed alarm over what he described as the "political poison" affecting the judiciary, stating that it has reached a peak although it did not begin recently.<br><br>
+                He cautioned that political influence within the judicial system could erode its impartiality, weakening the rule of law in the country.<br><br>
+                The retired judge further warned that partisanship within the judiciary could have serious consequences, potentially undermining the credibility of the legal system and transforming Ghana into a state ruled by political considerations rather than justice.<br><br>
+                “Look at even the empanelment. For what reason will you bring the young justices to handle such a weighty matter to the exclusion of the seniors? What reason?"<br><br>
+                “Legally I don’t see what was left for them to discuss because in rejecting the application to set aside their directive, they had ruled that they had jurisdiction."<br><br>
+                “They had already decided that the speaker had no jurisdiction on the matter so what was left actually for determination? This same panel that ruled that there was jurisdiction were still there and only two came in. The five went the way they went predictably.”<br><br>
+                “As I said some time ago, this question of political poison in the judicial system didn’t start today but it has gotten to its peak, under this current administration and that is the real constitutional virus to be reversed,” he stated.<br><br>
+                On November 12, the Supreme Court ruled in favour of Afenyo-Markin, overturning Speaker Bagbin’s declaration that the parliamentary seats for Suhum, Amenfi Central, Agona West, and Fomena were vacant. <br><br>The ruling sparked debate, with critics questioning the decision and the broader implications for the integrity of Ghana’s judiciary.
+            </p>
+        </div>
+
+        <!-- Top Trending Stories Section -->
+        <section class="container">
+            <h2>Trending Stories</h2>
+            <div class="stories">
+                <div class="story">
+                   <img src="image/unicef.png" alt="Unicef logo" class="story-image" width="200" height="auto">
+                        <div class="story-text">
+                            <p><a href="News.html">Sexual exploitation, abuse of children on the rise – UNICEF</a></p>
+                        </div>
+                   </div>
+                <div class="story">
+                   <img src="image/padi refugee board.jpeg" alt="Board Chair of Ghana refugee" width="200" height="auto">
+                        <div class="story-text">
+                            <p><a href="Politics.html">2024 Elections: Refugee Board warns asylum seekers against political involvement</a></p>
+                        </div>
+                  </div>
+                <div class="story">
+                    <img src="image/Pastor-Hammond-Love.webp" alt="Preacher and former husband of Christiana Love" width="200" height="auto">
+                        <div class="story-text">
+                            <p><a href="News.html">Court grants Pastor Love GHC2m bail</a></p>
+                        </div>
+                  </div>
+                <div class="story">
+                    <img src="image/Otto-Addo-1.jpg" alt="Coach of the Black Stars" width="200" height="auto">
+                        <div class="story-text">
+                            <p><a href="Sports.html">Black Stars miss out on AFCON 2025 after Angola draw</a></p>
+                        </div>
+                  </div>
+            </div>
+        </section>
+        <!--Section for trending videos -->
+<section class="video-section">
+    <h2>Latest Trending Videos</h2>
+    <div class="video-container">
+        <iframe src="image/How to accept JavaScript USER INPUT in 5 minutes 💬.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+</section>
+
+<!-- Comment Section -->
+<section class="comment-section">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <textarea id="commentInput" placeholder="Leave a comment..." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="commentsDisplay"></div>   
+</section>
+<footer>  
+        <p>&copy; 2024 Mypost.com. All rights reserved. 
+                <a href="terms.html">Terms and Conditions</a> | 
+                <a href="privacy.html">Privacy Policy</a> | Contact @mypostnews
+            </p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

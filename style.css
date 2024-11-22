@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+header {
+    background-color: rgb(32, 10, 6);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack the lines */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: white; /* Color of the toggle lines */
+    margin: 4px; /* Space between lines */
+}
+
+
+.logo {
+    height: 200px; 
+}
+
+.footer {
+    background-color: #333;
+    margin-top: 10px;
+    padding: 20px; /* Add padding */
+    text-align: center; 
+    color: white;
+
+}
+
+.sci {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    background-color: tomato;
+}
+
+.sci li {
+    margin-left: 30px;
+    margin: 0 15px;
+    display: inline;
+}
+.date {
+    margin-top: 10px; /* Space above the date */
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #ccc; /* Light grey color for the date */
+}
+
+.sci a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Navigation li {
+    margin-right: 20px;
+}
+
+.Navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.Navigation a:hover {
+    text-decoration: underline; 
+    border-radius: 1px; 
+    background-color: tomato;
+
+}
+@media (max-width: 768px) {
+    .toggle {
+        display: flex; /* Show toggle button on mobile */
+    }
+
+    .Navigation {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position it absolutely */
+        top: 30px; /* Adjust based on your header height */
+        left: 0; /* Align to the left */
+        width: 50%; /* Full width */
+        background-color: #333; /* Background color */
+        z-index: 1000; /* Ensure it appears above other content */
+        height: 50;
+        
+    }
+
+    .Navigation.active {
+        display: flex; /* Show navigation when active */
+    }
+
+    .Navigation li {
+        margin: 10px 0; /* Space between items on mobile */
+        text-align: center; /* Center align text */
+    }
+    .sci {
+        margin-top: 40px; /* Margin for social icons on small screens */
+      }
+}
+
+main {
+    margin: 100px; 
+    padding: 20px;
+}
+
+.trending-stories {
+    padding: 20px;
+    border-top: 20px solid #ccc;
+    margin: 20px;
+}
+
+.trending-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stories {
+    display: flex; 
+    overflow-x: auto; 
+    padding: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.story {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    min-width: 150px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px; 
+    text-align: center;
+}
+
+.story-content {
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.story-image { 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.story-text {
+    flex: 1; 
+}
+
+.story p {
+    margin: 10px 0 0;
+}
+
+.story a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.story a:hover {
+    text-decoration: underline; 
+    color: tomato; 
+}
+
+.stories::-webkit-scrollbar {
+    display: none; 
+}
+
+.container {
+    justify-content: space-between;
+    background-color: #f0f0f0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+p {
+    margin: 20px 0; 
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+.video-section {
+    margin: 40px 0; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+}
+
+.video-section h2 {
+    margin-bottom: 20px; 
+}
+
+.video-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.video-container iframe {
+    width: 48%; 
+    height: 200px; 
+    margin-bottom: 20px; 
+}
+
+.comment-section {
+    margin: 40px 0; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+}
+
+.comment-section h2 {
+    margin-bottom: 20px;
+}
+
+#commentForm {
+    display: flex; 
+    flex-direction: column; 
+}
+
+textarea {
+    resize: 30px; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+    height: 100px; 
+   width: 500px;
+}
+
+button {
+    align-self: flex-start; 
+    padding: 10px 20px; 
+    background-color: tomato; 
+    color: white;  
+    border-radius: 50px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #c0392b; 
+}
+#commentInput {
+    width: 50%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+#commentsDisplay {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-color: black;
+}
+
+.video-container iframe {
+    width: 48%; 
+    height: 300px; 
+    margin-bottom: 20px;
+}
